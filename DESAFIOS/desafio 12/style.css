@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
-root{
+:root{
     --fonte1:  'Shadows Into Light', 'cursive';
     --fonte2:'Bebas Neue', 'cursive';
-    
+    --fonte3: verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -28,7 +28,15 @@ header{
 }
 header > h1{
     padding-top: 50px;
+    padding-bottom: 20px;
     font-variant: small-caps;
+    font-size: 10vw;
+    text-align: center; 
+}
+header > p{
+    font-size: 20px;
+    padding-bottom: 5px;
+
 }
 a{
     color: white;
@@ -41,15 +49,18 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-size: 3vw  ;
 }
 section.normal{
     background-color: #262626;
 }
 section.imagem{
+
     color: white;
 }
 section.imagem > p{
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: black;
 }
 a:hover{
@@ -61,4 +72,5 @@ footer{
     color: white;
     text-align: center;
     padding: 10px ;
+    font-family: var(--fonte3);
 }
