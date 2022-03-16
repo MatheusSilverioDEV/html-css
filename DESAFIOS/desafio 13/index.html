@@ -5,67 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tábela desafio</title>
+    <style>
+        .centro{
+            text-align: center;
+        }
+        .inverso {
+            background-color: #7e7e7e;
+            color: white;
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        .esquerda {
+            text-align: left;
+        }
+        .realce {
+            font-weight: bolder;
+        }
+
+    </style>
 </head>
 <body>
 <table>
-    <thead>
-
-    </thead>
-    <tbody>
-        <tr>
-            <th>
-                Área
-            </th>
-            <th>Disciplina</th>
-            <th>Notas</th>
-            <th>Média</th>
+        <tr class="inverso">
+            <th rowspan="2" scope="col">Área</th>
+            <th rowspan="2" scope="col">Disciplina</th>
+            <th colspan="2" scope="colgroup">Notas</th>
+            <th rowspan="2" scope="col">Média</th>
         </tr>
-        <tr>
-            <th>Nota 1</th>
-            <th>Nota 2</th>
+        <tr class="inverso">
+            <th scope="col">Nota 1</th>
+            <th scope="col">Nota 2</th>
         </tr>
-        <td rowspan="4">Exatas </td>
+        <td rowspan="4" scope="rowgroup">Exatas </td>
             <td>Matemática</td>
-            <td>0,0</td>
-            <td>0,0</td>
-            <td>0,0</td>
+            <td class="centro">0,0</td>
+            <td class="centro">0,0</td>
+            <td class="centro">0,0</td>
         </tr>
         <tr>
             <td>Física</td>
-            <td>0,0</td>
-            <td>0,0</td>
-            <td>0,0</td>
+            <td class="centro">0,0</td>
+            <td class="centro">0,0</td>
+            <td class="centro">0,0</td>
         </tr>
         <tr>
             <td>Química</td>
-            <td>0,0</td>
-            <td>0,0</td>
-            <td>0,0</td>
+            <td class="centro">0,0</td>
+            <td class="centro">0,0</td>
+            <td class="centro">0,0</td>
         </tr>
         <tr>
             <td>Biologia</td>
-            <td>0,0</td>
-            <td>0,0</td>
-            <td>0,0</td>
+            <td class="centro">0,0</td>
+            <td class="centro">0,0</td>
+            <td class="centro">0,0</td>
+        </tr>
+        <tr class="inverso">
+            <th colspan="4" scope="row" class="esq">Média de exatas</th>
+            <td class="centro realce">0.0</td>
         </tr>
         <tr>
-            <th colspan="4">Média de exatas</th>
-        </tr>
-        <tr>
-            <th rowspan="2">Humanas</th>
+            <th rowspan="2" scope="rowgroup" class="esquerda">Humanas</th>
             <td>História</td>
-            <td>0,0</td>
-            <td>0,0</td>
-            <td>0,0</td>
+            <td class="centro">0,0</td>
+            <td class="centro">0,0</td>
+            <td class="centro">0,0</td>
         </tr>
         <tr>
             <td>Geografia</td>
-            <td>0,0</td>
-            <td>0,0</td>
-            <td>0,0</td>
+            <td class="centro">0,0</td>
+            <td class="centro">0,0</td>
+            <td class="centro">0,0</td>
         </tr>
-        
-    </tbody>
+        <tr class="inverso">
+            <th colspan="4" scope="rowgroup" class="esquerda">Média de Humanas</th>
+            <td class="centro realce">0.0</td>
 </table>
     
 </body>
